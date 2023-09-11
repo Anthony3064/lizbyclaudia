@@ -1,12 +1,11 @@
 import Hero from "../../components/Hero";
-import Banner from "../../components/Banner";
-import Test from "../Test";
-const Layout = () => {
+import Footer from "../../components/Footer";
+const Layout = ({ children }) => {
     return (
         <>
             <Hero />
-            <Banner/>
-            <Test />
+            {children}
+            <Footer />
         </>
     )
 }

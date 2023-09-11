@@ -6,4 +6,4 @@ const Hero = () => {
         </header>
     )
 }
-export default Hero
+export default Hero;

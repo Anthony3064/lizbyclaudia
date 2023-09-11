@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <section className='banner'>
+        <section className='banner' id="banner">
             <div className="text__banner">
                 <h1 className="title__banner">
                     Bienvenidos
