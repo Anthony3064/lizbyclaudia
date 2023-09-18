@@ -19,7 +19,10 @@ const Navbar = () => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start'});
+            const y = section.getBoundingClientRect().top + window.pageYOffset - 80;
+            console.log(y);
+            window.scrollTo({top: y, behavior: 'smooth'});
+            //section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
