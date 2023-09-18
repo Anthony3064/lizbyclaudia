@@ -5,7 +5,6 @@ const ImagesCard = ({ images }) => {
 
     const nextImage = () => {
         let next = indexImage + 1;
-        console.log(next);
         if (next === images.length) {
             next = 0;
         }
