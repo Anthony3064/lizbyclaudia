@@ -7,7 +7,7 @@ const Contact = () => {
         <section id="contact" className="contact" onSubmit={handleSubmit}>
             <form className="form__contact">
                 <h2 className="contact__title">
-                    Contactanos
+                    Contáctanos
                 </h2>
                 {
                     message &&

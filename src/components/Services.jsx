@@ -2,6 +2,9 @@ const Services = () => {
     return (
         <section id="services" className="services">
             <div className="services__container">
+                <h2 className="services__title" >
+                    Mis principales servicios
+                </h2>
                 <div className="services__text">
                     <span className="services__description">
                         Maquillaje

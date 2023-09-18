@@ -38,6 +38,9 @@ const Navbar = () => {
                 <li className={`nav__item ${MENU.SERVICES === linkMenuActive && 'active'}`} >
                     <Link className='nav__link' onClick={() => handleClickLinkActive(MENU.SERVICES, MENU.SERVICES)}>Servicios</Link>
                 </li>
+                <li className={`nav__item ${MENU.WORKS === linkMenuActive && 'active'}`} >
+                    <Link className='nav__link' onClick={() => handleClickLinkActive(MENU.WORKS, MENU.WORKS)}>Trabajos</Link>
+                </li>
                 <li className={`nav__item ${MENU.CONTACT === linkMenuActive && 'active'}`} >
                     <Link className='nav__link' onClick={() => handleClickLinkActive(MENU.CONTACT, MENU.CONTACT)}>Contacto</Link>
                 </li>

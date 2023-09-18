@@ -10,9 +10,9 @@ const Footer = () => {
             Copyright
           </span>
           <FontAwesomeIcon icon={'copyright'} />
-          <date>
+          <p>
             2023
-          </date>
+          </p>
           <span>
             ClaudiaByLiz
           </span>
