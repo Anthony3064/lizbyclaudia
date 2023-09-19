@@ -6,26 +6,29 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__description">
-          <span>
+          <p className="footer__text">
             Copyright
-          </span>
-          <FontAwesomeIcon icon={'copyright'} />
-          <p>
-            2023
+            <FontAwesomeIcon className="footer__copyright" icon={'fa-regular fa-copyright'} />
+            <span className='footer__span'>
+              2023
+              LizByClau
+            </span>
           </p>
-          <span>
-            ClaudiaByLiz
-          </span>
         </div>
         <div className="social__network footer__social" >
           <li className="nav__item">
             <Link className='nav__link' target="_blank" to='https://www.instagram.com/claudia_cabalceta/'>
-              <i className="fab fa-instagram" />
+              <FontAwesomeIcon icon={'fab fa-instagram'} />
             </Link>
           </li>
           <li className="nav__item">
             <Link className='nav__link' target="_blank" to='https://www.facebook.com/claudializ.cabalceta/'>
-              <i className="fab fa-facebook" />
+              <FontAwesomeIcon icon={'fab fa-facebook'} />
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link className='nav__link' target="_blank" to=''>
+              <FontAwesomeIcon className="whatsapp__icon" icon={'fab fa-whatsapp'} />
             </Link>
           </li>
         </div>

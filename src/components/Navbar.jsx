@@ -2,6 +2,7 @@ import { useState } from "react";
 import ButtonIcon from "./NavbarButton";
 import { MENU } from "../utils/Constants";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Navbar = () => {
     const [showBars, setShowBars] = useState(true);
     const [linkMenuActive, setLinkMenuActive] = useState(MENU.HOME);
@@ -20,9 +21,7 @@ const Navbar = () => {
         const section = document.getElementById(sectionId);
         if (section) {
             const y = section.getBoundingClientRect().top + window.pageYOffset - 80;
-            console.log(y);
-            window.scrollTo({top: y, behavior: 'smooth'});
-            //section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
 
@@ -50,12 +49,17 @@ const Navbar = () => {
                 <div className="social__network" >
                     <li className="nav__item">
                         <Link className='nav__link' target="_blank" to='https://www.instagram.com/claudia_cabalceta/'>
-                            <i className="fab fa-instagram" />
+                            <FontAwesomeIcon icon={'fab fa-instagram'} />
                         </Link>
                     </li>
                     <li className="nav__item">
                         <Link className='nav__link' target="_blank" to='https://www.facebook.com/claudializ.cabalceta/'>
-                            <i className="fab fa-facebook" />
+                            <FontAwesomeIcon icon={'fab fa-facebook'} />
+                        </Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link className='nav__link' target="_blank" to=''>
+                            <FontAwesomeIcon icon={'fab fa-whatsapp'} />
                         </Link>
                     </li>
                 </div>
